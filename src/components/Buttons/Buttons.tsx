@@ -1,34 +1,17 @@
 import "./Buttons.scss";
 
-interface BtnProps {
-    type: "button" | "submit" | "reset";
-    text: string;
-    baseClassNames?: string;
-    extraClassNames?: string;
+interface IBtnProps {
+    type?: "button" | "submit" | "reset";
+    className?: string;
+    children?: React.ReactNode;
 }
 
-function Btn(props: BtnProps) {
+function Button({type = 'button', className, children}: IBtnProps) {
     return (
-        <button type={props.type} className={`btn ${props.baseClassNames} ${props.extraClassNames}`} >
-            {props.text}
+        <button type={type} className={`btn ${className}`} >
+            {children}
         </button>
     )
 }
 
-function BtnPrimary(props: BtnProps) {
-    return <Btn {...props} baseClassNames="btn-primary" />;
-}
-
-function BtnSecondary(props: BtnProps) {
-    return <Btn {...props} baseClassNames="btn-secondary" />;
-}
-
-function BtnOutlinePrimary(props: BtnProps) {
-    return <Btn {...props} baseClassNames="btn-outline-primary" />;
-}
-
-function BtnOutlineSecondary(props: BtnProps) {
-    return <Btn {...props} baseClassNames="btn-outline-secondary" />;
-}
-
-export { BtnPrimary, BtnSecondary, BtnOutlinePrimary, BtnOutlineSecondary };
+export default Button
