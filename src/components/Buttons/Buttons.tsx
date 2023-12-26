@@ -1,12 +1,12 @@
 import "./Buttons.scss";
 
-interface IBtnProps {
+interface BtnProps {
     type?: "button" | "submit" | "reset";
     className?: string;
     children?: React.ReactNode;
 }
 
-function Button({type = 'button', className, children}: IBtnProps) {
+function Button({type = 'button', className, children}: BtnProps) {
     return (
         <button type={type} className={`btn ${className}`} >
             {children}

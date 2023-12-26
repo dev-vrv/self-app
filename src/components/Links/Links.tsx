@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import "./Links.scss";
 
-interface ILink {
+interface LinkProps {
     to: string;
     children?: React.ReactNode;
     className?: string;
 }
 
-function RoutingLink(props: ILink) {
+function RoutingLink(props: LinkProps) {
     return (
         <Link to={props.to} className={props.className}>
             {props.children}
@@ -15,7 +15,7 @@ function RoutingLink(props: ILink) {
     )
 }
 
-function BaseLink(props: ILink) {
+function BaseLink(props: LinkProps) {
     return (
         <a href={props.to}>
             {props.children}
