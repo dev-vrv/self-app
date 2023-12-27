@@ -1,0 +1,13 @@
+@import './_colors';
+
+.scroll-bar {
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $color-white;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-lite;
+    }
+}

@@ -1,11 +1,14 @@
+@import './assets/scss/_common';
+
 html, body {
     margin: 0;
     padding: 0;
     min-height: 1000vh;
     width: 100vw;
     overflow-x: hidden;
-    
     font-family: 'Courier New', Courier, monospace;
+
+    @extend .scroll-bar;
 }
 
 * {

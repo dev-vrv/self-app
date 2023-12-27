@@ -3,10 +3,6 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-import LaxuaryImage from "../../../assets/images/laxuary.jpg";
-import SleekImage from "../../../assets/images/sleek.webp";
-import WorkImage from "../../../assets/images/work.jpg";
-
 export default function Baner() {
     return (
         <div className="baner">
@@ -27,7 +23,7 @@ export default function Baner() {
                                 Sleek Online Solutions
                             </h3>
                             <img
-                                src={SleekImage}
+                                src="/images/baner/baner1.webp"
                                 alt=""
                                 className="baner__slide--image"
                             />
@@ -39,7 +35,7 @@ export default function Baner() {
                                 Luxury Websites
                             </h3>
                             <img
-                                src={LaxuaryImage}
+                                src="/images/baner/baner2.jpg"
                                 alt=""
                                 className="baner__slide--image"
                             />
@@ -52,7 +48,7 @@ export default function Baner() {
                                 Steady Advancement
                             </h3>
                             <img
-                                src={WorkImage}
+                                src="/images/baner/baner3.jpg"
                                 alt=""
                                 className="baner__slide--image"
                             />

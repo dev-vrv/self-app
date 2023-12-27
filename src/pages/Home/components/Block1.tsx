@@ -1,5 +1,6 @@
 import { FcApproval } from "react-icons/fc";
 import Button from "../../../components/Buttons/Buttons";
+import { NavLink } from "react-router-dom";
 
 export default function Block1() {
     return (
@@ -23,11 +24,13 @@ export default function Block1() {
                 </div>
                 <div className="col-10 col-lg-5 p-3">
                     <p className="fs-5">
-                        Were divided, moved night light darkness winged may also make man for. Winged the for Earth creeping appear evening, gathered Forth so he. Life that dry of created greater can't also gathered female green.
+                    Our team are passionate professionals who are deeply committed to their work. We take pride in our work and strive to ensure that your project not only meets, but exceeds your expectations. When you choose us, you get a team that genuinely loves their work and is fully committed to your success.
                     </p>
 
-                    <Button className="btn-dark btn-lg mt-4">
-                        About us
+                    <Button className="btn-dark mt-4">
+                        <NavLink to={'about'} className="text-white">
+                            About us
+                        </NavLink>
                     </Button>
                 </div>
             </div>
