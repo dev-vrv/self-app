@@ -1,44 +1,57 @@
 import "./Nav.scss";
-import { BaseLink, RoutingLink } from "../Links/Links";
+import { Link, NavLink } from "react-router-dom";
 import { FaGithub, FaTelegram, FaInstagram } from "react-icons/fa";
 
 function Nav() {
     return (
-        <nav className="nav">
-            <ul className="nav__list">
+        <nav className="nav gap-5">
+            <ul className="nav__list gap-5">
                 <li className="nav__item">
-                    <RoutingLink to="/" className="link">
+                    <NavLink to="/" className="fs-6 fw-normal nav__item--link">
                         Home
-                    </RoutingLink>
+                    </NavLink>
                 </li>
                 <li className="nav__item">
-                    <RoutingLink to="/contacts" className="link">
+                    <NavLink
+                        to="/contacts"
+                        className="fs-6 fw-normal nav__item--link"
+                    >
                         Contacts
-                    </RoutingLink>
+                    </NavLink>
                 </li>
                 <li className="nav__item">
-                    <RoutingLink to="/about" className="link">
+                    <NavLink
+                        to="/about"
+                        className="fs-6 fw-normal nav__item--link"
+                    >
                         About
-                    </RoutingLink>
+                    </NavLink>
                 </li>
                 <li className="nav__item">
-                    <RoutingLink to="/services" className="link">
+                    <NavLink
+                        to="/services"
+                        className="fs-6 fw-normal nav__item--link"
+                    >
                         Services
-                    </RoutingLink>
+                    </NavLink>
                 </li>
-                <li className="nav__item gap-2 fs-4">
-                    {/* Github */}
-                    <BaseLink to="/">
+            </ul>
+
+            <ul className="nav__list--social gap-2">
+                <li className="nav__item">
+                    <Link to="/" className="fs-4 nav__item--link">
                         <FaGithub />
-                    </BaseLink>
-                    {/* Instagram */}
-                    <BaseLink to="/">
+                    </Link>
+                </li>
+                <li className="nav__item">
+                    <Link to="/" className="fs-4 nav__item--link">
                         <FaInstagram />
-                    </BaseLink>
-                    {/* Telegram */}
-                    <BaseLink to="/">
+                    </Link>
+                </li>
+                <li className="nav__item">
+                    <Link to="/" className="fs-4 nav__item--link">
                         <FaTelegram />
-                    </BaseLink>
+                    </Link>
                 </li>
             </ul>
         </nav>

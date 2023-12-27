@@ -1,11 +1,12 @@
-import './Logo.scss'
+import "./Logo.scss";
+import { Link } from "react-router-dom";
 
 function Logo() {
     return (
-        <div className="logo">
-            <h1>DEVER</h1>
-        </div>
-    )
+        <Link to="/" className="text-white text-decoration-none fs-4 fw-normal">
+           Dever.
+        </Link>
+    );
 }
 
-export default Logo
+export default Logo;
