@@ -11,3 +11,10 @@
         background-color: $color-lite;
     }
 }
+
+.line-item {
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgba($color-dark, 1);
+}

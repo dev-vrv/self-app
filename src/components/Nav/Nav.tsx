@@ -39,17 +39,26 @@ function Nav() {
 
             <ul className="nav__list--social gap-2">
                 <li className="nav__item">
-                    <Link to="/" className="fs-4 nav__item--link">
+                    <Link 
+                        to="/" 
+                        className="fs-4 nav__item--link"
+                    >
                         <FaGithub />
                     </Link>
                 </li>
                 <li className="nav__item">
-                    <Link to="/" className="fs-4 nav__item--link">
+                    <Link 
+                        to="/" 
+                        className="fs-4 nav__item--link"
+                    >
                         <FaInstagram />
                     </Link>
                 </li>
                 <li className="nav__item">
-                    <Link to="/" className="fs-4 nav__item--link">
+                    <Link 
+                        to="/" 
+                        className="fs-4 nav__item--link"
+                    >
                         <FaTelegram />
                     </Link>
                 </li>

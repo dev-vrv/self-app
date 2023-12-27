@@ -21,13 +21,13 @@ function CardService(props: CardServiceProps) {
             <img src={props.image} alt="" className="img-fluid" />
             <p className="card-service__info">
                 <i className="card-service__icon">{props.icon}</i>
-                <p className="card-service__caption">{props.caption}</p>
-                <p className="card-service__more">
+                <span className="card-service__caption">{props.caption}</span>
+                <span className="card-service__more">
                     <span>read more</span>
                     <i className="ms-2">
                         <FaLongArrowAltRight />
                     </i>
-                </p>
+                </span>
             </p>
         </NavLink>
     );
@@ -35,7 +35,7 @@ function CardService(props: CardServiceProps) {
 
 export default function Block2() {
     return (
-        <div className="container-fluid mt-4">
+        <div className="container-fluid mt-5">
             <div className="row">
                 <div className="col-12 col-md-6 col-lg-3">
                     <CardService

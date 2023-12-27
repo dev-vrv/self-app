@@ -1,7 +1,8 @@
 @import '../../assets/scss/_colors';
+@import '../../assets/scss/_common';
 
 .baner {
-    height: 75vh;
+    height: 70vh;
     background: linear-gradient(180deg, $color-dark 65%, $color-white 35%);
     position: relative;
 
@@ -84,18 +85,18 @@
         bottom: -20%;
         left: -10%;
     }
-    
+
 }
 
 .card-service {
     height: 500px;
     display: flex;
-    background-color: rebeccapurple;
     position: relative;
     overflow: hidden;
+
     & img {
         filter: brightness(0.8);
-        transition: filter 0.3s ease-in-out, transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
         object-fit: cover;
         object-position: center;
     }
@@ -104,11 +105,12 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        bottom: 0%;
+        bottom: 5%;
         left: 10%;
         color: $color-white;
         transition: bottom 0.3s ease-in-out;
         margin: 0;
+        text-shadow: 1px 1px 1px rgba($color-dark, 0.25);
     }
 
     &__icon {
@@ -118,6 +120,8 @@
     &__caption {
         max-width: 80%;
         font-size: 1.5rem;
+        display: block;
+        padding: 1.25rem 0;
     }
 
     &__more {
@@ -130,9 +134,11 @@
         & img {
             transform: scale(1.05);
         }
+
         & .card-service__info {
             bottom: 10%;
         }
+
         & .card-service__more {
             opacity: 1;
         }
